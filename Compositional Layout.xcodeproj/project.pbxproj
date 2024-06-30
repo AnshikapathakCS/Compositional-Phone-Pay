@@ -16,6 +16,19 @@
 		4C93F3542C314A8000A3F0D2 /* Compositional_LayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93F3532C314A8000A3F0D2 /* Compositional_LayoutTests.swift */; };
 		4C93F35E2C314A8000A3F0D2 /* Compositional_LayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93F35D2C314A8000A3F0D2 /* Compositional_LayoutUITests.swift */; };
 		4C93F3602C314A8000A3F0D2 /* Compositional_LayoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93F35F2C314A8000A3F0D2 /* Compositional_LayoutUITestsLaunchTests.swift */; };
+		4C93F3812C314C7600A3F0D2 /* BannerCvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93F36C2C314C7600A3F0D2 /* BannerCvCell.swift */; };
+		4C93F3822C314C7600A3F0D2 /* BannerCvCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C93F36D2C314C7600A3F0D2 /* BannerCvCell.xib */; };
+		4C93F3832C314C7600A3F0D2 /* BlueTileCvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93F36F2C314C7600A3F0D2 /* BlueTileCvCell.swift */; };
+		4C93F3842C314C7600A3F0D2 /* BlueTileCvCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C93F3702C314C7600A3F0D2 /* BlueTileCvCell.xib */; };
+		4C93F3852C314C7600A3F0D2 /* MoneyTransferCvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93F3722C314C7600A3F0D2 /* MoneyTransferCvCell.swift */; };
+		4C93F3862C314C7600A3F0D2 /* MoneyTransferCvCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C93F3732C314C7600A3F0D2 /* MoneyTransferCvCell.xib */; };
+		4C93F3872C314C7600A3F0D2 /* QrCvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93F3752C314C7600A3F0D2 /* QrCvCell.swift */; };
+		4C93F3882C314C7600A3F0D2 /* QrCvCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C93F3762C314C7600A3F0D2 /* QrCvCell.xib */; };
+		4C93F3892C314C7600A3F0D2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93F3792C314C7600A3F0D2 /* HeaderView.swift */; };
+		4C93F38A2C314C7600A3F0D2 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C93F37A2C314C7600A3F0D2 /* HeaderView.xib */; };
+		4C93F38B2C314C7600A3F0D2 /* Hearder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93F37B2C314C7600A3F0D2 /* Hearder.swift */; };
+		4C93F38C2C314C7600A3F0D2 /* Hearder.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C93F37C2C314C7600A3F0D2 /* Hearder.xib */; };
+		4C93F38D2C314C7600A3F0D2 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93F37E2C314C7600A3F0D2 /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +62,19 @@
 		4C93F3592C314A8000A3F0D2 /* Compositional LayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Compositional LayoutUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C93F35D2C314A8000A3F0D2 /* Compositional_LayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compositional_LayoutUITests.swift; sourceTree = "<group>"; };
 		4C93F35F2C314A8000A3F0D2 /* Compositional_LayoutUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compositional_LayoutUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4C93F36C2C314C7600A3F0D2 /* BannerCvCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerCvCell.swift; sourceTree = "<group>"; };
+		4C93F36D2C314C7600A3F0D2 /* BannerCvCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BannerCvCell.xib; sourceTree = "<group>"; };
+		4C93F36F2C314C7600A3F0D2 /* BlueTileCvCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueTileCvCell.swift; sourceTree = "<group>"; };
+		4C93F3702C314C7600A3F0D2 /* BlueTileCvCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlueTileCvCell.xib; sourceTree = "<group>"; };
+		4C93F3722C314C7600A3F0D2 /* MoneyTransferCvCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyTransferCvCell.swift; sourceTree = "<group>"; };
+		4C93F3732C314C7600A3F0D2 /* MoneyTransferCvCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoneyTransferCvCell.xib; sourceTree = "<group>"; };
+		4C93F3752C314C7600A3F0D2 /* QrCvCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QrCvCell.swift; sourceTree = "<group>"; };
+		4C93F3762C314C7600A3F0D2 /* QrCvCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QrCvCell.xib; sourceTree = "<group>"; };
+		4C93F3792C314C7600A3F0D2 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		4C93F37A2C314C7600A3F0D2 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		4C93F37B2C314C7600A3F0D2 /* Hearder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hearder.swift; sourceTree = "<group>"; };
+		4C93F37C2C314C7600A3F0D2 /* Hearder.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Hearder.xib; sourceTree = "<group>"; };
+		4C93F37E2C314C7600A3F0D2 /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +128,7 @@
 				4C93F33C2C314A7F00A3F0D2 /* AppDelegate.swift */,
 				4C93F33E2C314A7F00A3F0D2 /* SceneDelegate.swift */,
 				4C93F3402C314A7F00A3F0D2 /* ViewController.swift */,
+				4C93F3802C314C7600A3F0D2 /* Compositional */,
 				4C93F3422C314A7F00A3F0D2 /* Main.storyboard */,
 				4C93F3452C314A8000A3F0D2 /* Assets.xcassets */,
 				4C93F3472C314A8000A3F0D2 /* LaunchScreen.storyboard */,
@@ -125,6 +152,83 @@
 				4C93F35F2C314A8000A3F0D2 /* Compositional_LayoutUITestsLaunchTests.swift */,
 			);
 			path = "Compositional LayoutUITests";
+			sourceTree = "<group>";
+		};
+		4C93F36E2C314C7600A3F0D2 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				4C93F36C2C314C7600A3F0D2 /* BannerCvCell.swift */,
+				4C93F36D2C314C7600A3F0D2 /* BannerCvCell.xib */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		4C93F3712C314C7600A3F0D2 /* BlueTile */ = {
+			isa = PBXGroup;
+			children = (
+				4C93F36F2C314C7600A3F0D2 /* BlueTileCvCell.swift */,
+				4C93F3702C314C7600A3F0D2 /* BlueTileCvCell.xib */,
+			);
+			path = BlueTile;
+			sourceTree = "<group>";
+		};
+		4C93F3742C314C7600A3F0D2 /* MoneyTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				4C93F3722C314C7600A3F0D2 /* MoneyTransferCvCell.swift */,
+				4C93F3732C314C7600A3F0D2 /* MoneyTransferCvCell.xib */,
+			);
+			path = MoneyTransfer;
+			sourceTree = "<group>";
+		};
+		4C93F3772C314C7600A3F0D2 /* Qr */ = {
+			isa = PBXGroup;
+			children = (
+				4C93F3752C314C7600A3F0D2 /* QrCvCell.swift */,
+				4C93F3762C314C7600A3F0D2 /* QrCvCell.xib */,
+			);
+			path = Qr;
+			sourceTree = "<group>";
+		};
+		4C93F3782C314C7600A3F0D2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4C93F36E2C314C7600A3F0D2 /* Banner */,
+				4C93F3712C314C7600A3F0D2 /* BlueTile */,
+				4C93F3742C314C7600A3F0D2 /* MoneyTransfer */,
+				4C93F3772C314C7600A3F0D2 /* Qr */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4C93F37D2C314C7600A3F0D2 /* HeaderAndFooter */ = {
+			isa = PBXGroup;
+			children = (
+				4C93F3792C314C7600A3F0D2 /* HeaderView.swift */,
+				4C93F37A2C314C7600A3F0D2 /* HeaderView.xib */,
+				4C93F37B2C314C7600A3F0D2 /* Hearder.swift */,
+				4C93F37C2C314C7600A3F0D2 /* Hearder.xib */,
+			);
+			path = HeaderAndFooter;
+			sourceTree = "<group>";
+		};
+		4C93F37F2C314C7600A3F0D2 /* SectionBgView */ = {
+			isa = PBXGroup;
+			children = (
+				4C93F37E2C314C7600A3F0D2 /* BackgroundView.swift */,
+			);
+			path = SectionBgView;
+			sourceTree = "<group>";
+		};
+		4C93F3802C314C7600A3F0D2 /* Compositional */ = {
+			isa = PBXGroup;
+			children = (
+				4C93F3782C314C7600A3F0D2 /* Cell */,
+				4C93F37D2C314C7600A3F0D2 /* HeaderAndFooter */,
+				4C93F37F2C314C7600A3F0D2 /* SectionBgView */,
+			);
+			name = Compositional;
+			path = ../../../../Downloads/PhonePayCompositional/PhonePayCompositional/Compositional;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +335,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C93F3882C314C7600A3F0D2 /* QrCvCell.xib in Resources */,
+				4C93F3822C314C7600A3F0D2 /* BannerCvCell.xib in Resources */,
+				4C93F3842C314C7600A3F0D2 /* BlueTileCvCell.xib in Resources */,
+				4C93F38A2C314C7600A3F0D2 /* HeaderView.xib in Resources */,
 				4C93F3462C314A8000A3F0D2 /* Assets.xcassets in Resources */,
 				4C93F3492C314A8000A3F0D2 /* Base in Resources */,
+				4C93F38C2C314C7600A3F0D2 /* Hearder.xib in Resources */,
+				4C93F3862C314C7600A3F0D2 /* MoneyTransferCvCell.xib in Resources */,
 				4C93F3442C314A7F00A3F0D2 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +368,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C93F38D2C314C7600A3F0D2 /* BackgroundView.swift in Sources */,
+				4C93F38B2C314C7600A3F0D2 /* Hearder.swift in Sources */,
+				4C93F3812C314C7600A3F0D2 /* BannerCvCell.swift in Sources */,
 				4C93F3412C314A7F00A3F0D2 /* ViewController.swift in Sources */,
+				4C93F3872C314C7600A3F0D2 /* QrCvCell.swift in Sources */,
 				4C93F33D2C314A7F00A3F0D2 /* AppDelegate.swift in Sources */,
+				4C93F3832C314C7600A3F0D2 /* BlueTileCvCell.swift in Sources */,
+				4C93F3852C314C7600A3F0D2 /* MoneyTransferCvCell.swift in Sources */,
 				4C93F33F2C314A7F00A3F0D2 /* SceneDelegate.swift in Sources */,
+				4C93F3892C314C7600A3F0D2 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
