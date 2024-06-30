@@ -29,6 +29,8 @@
 		4C93F3BD2C315DEE00A3F0D2 /* BlueTileCvCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C93F3BB2C315DEE00A3F0D2 /* BlueTileCvCell.xib */; };
 		4C93F3C12C315E2F00A3F0D2 /* QrCvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93F3BF2C315E2F00A3F0D2 /* QrCvCell.swift */; };
 		4C93F3C22C315E2F00A3F0D2 /* QrCvCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C93F3C02C315E2F00A3F0D2 /* QrCvCell.xib */; };
+		4C93F3C52C31ABA600A3F0D2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93F3C42C31ABA600A3F0D2 /* ViewModel.swift */; };
+		4C93F3C82C31AE3D00A3F0D2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93F3C72C31AE3D00A3F0D2 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		4C93F3BB2C315DEE00A3F0D2 /* BlueTileCvCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlueTileCvCell.xib; sourceTree = "<group>"; };
 		4C93F3BF2C315E2F00A3F0D2 /* QrCvCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCvCell.swift; sourceTree = "<group>"; };
 		4C93F3C02C315E2F00A3F0D2 /* QrCvCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QrCvCell.xib; sourceTree = "<group>"; };
+		4C93F3C42C31ABA600A3F0D2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		4C93F3C72C31AE3D00A3F0D2 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 		4C93F33B2C314A7F00A3F0D2 /* Compositional Layout */ = {
 			isa = PBXGroup;
 			children = (
+				4C93F3C62C31AE2600A3F0D2 /* Utilis */,
 				4C93F38E2C31515100A3F0D2 /* Composition Layout */,
 				4C93F33C2C314A7F00A3F0D2 /* AppDelegate.swift */,
 				4C93F33E2C314A7F00A3F0D2 /* SceneDelegate.swift */,
@@ -157,6 +162,7 @@
 		4C93F38E2C31515100A3F0D2 /* Composition Layout */ = {
 			isa = PBXGroup;
 			children = (
+				4C93F3C32C31AB9600A3F0D2 /* ViewModel */,
 				4C93F3B32C315D5D00A3F0D2 /* Cell */,
 				4C93F3B02C315CEE00A3F0D2 /* SectionBgView */,
 				4C93F3A72C31596100A3F0D2 /* HeaderFooterCell */,
@@ -228,6 +234,22 @@
 				4C93F3C02C315E2F00A3F0D2 /* QrCvCell.xib */,
 			);
 			path = Qr;
+			sourceTree = "<group>";
+		};
+		4C93F3C32C31AB9600A3F0D2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4C93F3C42C31ABA600A3F0D2 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4C93F3C62C31AE2600A3F0D2 /* Utilis */ = {
+			isa = PBXGroup;
+			children = (
+				4C93F3C72C31AE3D00A3F0D2 /* Utils.swift */,
+			);
+			path = Utilis;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,6 +392,7 @@
 				4C93F3AA2C315B9100A3F0D2 /* HeaderView.swift in Sources */,
 				4C93F3412C314A7F00A3F0D2 /* ViewController.swift in Sources */,
 				4C93F3B72C315DA400A3F0D2 /* MoneyTransferCvCell.swift in Sources */,
+				4C93F3C52C31ABA600A3F0D2 /* ViewModel.swift in Sources */,
 				4C93F33D2C314A7F00A3F0D2 /* AppDelegate.swift in Sources */,
 				4C93F3B22C315D0E00A3F0D2 /* BackgroundView.swift in Sources */,
 				4C93F33F2C314A7F00A3F0D2 /* SceneDelegate.swift in Sources */,
@@ -377,6 +400,7 @@
 				4C93F3C12C315E2F00A3F0D2 /* QrCvCell.swift in Sources */,
 				4C93F3A12C3157A300A3F0D2 /* BannerCvCell.swift in Sources */,
 				4C93F3BC2C315DEE00A3F0D2 /* BlueTileCvCell.swift in Sources */,
+				4C93F3C82C31AE3D00A3F0D2 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

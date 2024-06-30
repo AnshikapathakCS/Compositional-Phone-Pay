@@ -8,11 +8,14 @@
 import UIKit
 
 class MoneyTransferCvCell: UICollectionViewCell {
-    @IBOutlet var iconIv: UIView!
+    @IBOutlet var iconIv: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         self.iconIv.layer.cornerRadius = 4
         // Initialization code
     }
 
+    func configure(image: String){
+        iconIv.image = UIImage(named: image)
+    }
 }

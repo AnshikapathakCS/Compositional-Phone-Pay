@@ -1,16 +1,9 @@
-//
-//  ViewController.swift
-//  Compositional Layout
-//
-//  Created by OS on 30/06/24.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     lazy var collectionView: UICollectionView = {
-        let cv = UICollectionView.init(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout.init())
+        let cv = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         cv.translatesAutoresizingMaskIntoConstraints = false
         cv.delegate = self
         cv.dataSource = self
@@ -18,51 +11,43 @@ class ViewController: UIViewController {
         return cv
     }()
     
-    let dataSourceTitle = ["Transfer Money", "Recharge and Paybills", "Sponsored Links", "Insurance", "Travel Bookings", "Switch"]
+    let viewModel = ViewModel()
     
-    let dataSource = ["HeaderImgTwo", "HeaderImgThree" , "HeaderImgSix", "HeaderImgOne", "HeaderImgFive", "HeaderImgFour"]
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addSubview(self.collectionView)
-        self.setConstraintForCollectionView()
-        self.registerCell()
-        self.registerHeaderAndFooter()
-        self.setupCompositionLayout()
+        view.addSubview(collectionView)
+        setConstraintForCollectionView()
+        registerCells()
+        registerHeaderAndFooter()
+        setupCompositionLayout()
     }
-
     
     func setConstraintForCollectionView() {
         NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: self.view.topAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
-            collectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
+            collectionView.topAnchor.constraint(equalTo: view.topAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
-        
     }
     
-    func registerCell(){
-        collectionView.register(UINib.init(nibName: "MoneyTransferCvCell", bundle: nil),
-                                forCellWithReuseIdentifier: "MoneyTransferCvCell")
-        collectionView.register(UINib.init(nibName: "BannerCvCell", bundle: nil),
-                                forCellWithReuseIdentifier: "BannerCvCell")
-        collectionView.register(UINib.init(nibName: "QrCvCell", bundle: nil),
-                                forCellWithReuseIdentifier: "QrCvCell")
-        collectionView.register(UINib.init(nibName: "BlueTileCvCell", bundle: nil),
-                                forCellWithReuseIdentifier: "BlueTileCvCell")
+    func registerCells() {
+        collectionView.register(UINib(nibName: "MoneyTransferCvCell", bundle: nil), forCellWithReuseIdentifier: "MoneyTransferCvCell")
+        collectionView.register(UINib(nibName: "BannerCvCell", bundle: nil), forCellWithReuseIdentifier: "BannerCvCell")
+        collectionView.register(UINib(nibName: "QrCvCell", bundle: nil), forCellWithReuseIdentifier: "QrCvCell")
+        collectionView.register(UINib(nibName: "BlueTileCvCell", bundle: nil), forCellWithReuseIdentifier: "BlueTileCvCell")
     }
     
-    func registerHeaderAndFooter(){
-        collectionView.register(UINib.init(nibName: "HeaderView", bundle: nil), forSupplementaryViewOfKind:  UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderView")
+    func registerHeaderAndFooter() {
+        collectionView.register(UINib(nibName: "HeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderView")
     }
     
     func setupCompositionLayout() {
-        let layout = UICollectionViewCompositionalLayout {sectionIndex,enviroment in
+        let layout = UICollectionViewCompositionalLayout { sectionIndex, environment in
             switch sectionIndex {
-            case 0,5:
+            case 0, 5:
                 return self.layoutForSectionFirst()
-            case 1,4,6,7,8,9:
+            case 1, 4, 6, 7, 8, 9:
                 return self.layoutForSectionSecond()
             case 2:
                 return self.layoutForSectionThird()
@@ -71,7 +56,6 @@ class ViewController: UIViewController {
             default:
                 return nil
             }
-           
         }
         layout.register(BackgroundView.self, forDecorationViewOfKind: "BackgroundView")
         collectionView.setCollectionViewLayout(layout, animated: true)
@@ -92,7 +76,6 @@ class ViewController: UIViewController {
        
         section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary
         return section
-        
     }
     
     func layoutForSectionSecond() -> NSCollectionLayoutSection {
@@ -153,74 +136,64 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return viewModel.numberOfSections
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0 || section == 5 {
-            return 5
-        } else if  section == 1 || section == 6 || section == 7 || section == 8 || section == 9 {
-            return 4
-        }  else if  section == 2 {
-            return 1
-        } else if  section == 3 {
-            return 3
-        } else {
-            return 8
-        }
+        return viewModel.numberOfItems(in: section)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch indexPath.section {
-        case 0,5:
-            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BannerCvCell",for: indexPath) as? BannerCvCell {
-                let imageName = dataSource[indexPath.item]
-                cell.configureData(data: imageName)
+        case 0, 5:
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BannerCvCell", for: indexPath) as? BannerCvCell {
+                if let imageName = viewModel.imageNameForSection(indexPath.section, at: indexPath.item) {
+                    cell.configureData(data: imageName)
+                }
                 return cell
             }
-            return UICollectionViewCell()
-        case 1,4,6,7,8,9:
-            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MoneyTransferCvCell",for: indexPath) as? MoneyTransferCvCell {
+        case 1:
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MoneyTransferCvCell", for: indexPath) as? MoneyTransferCvCell {
+                if let imageName = viewModel.imageNameForSection(indexPath.section, at: indexPath.item) {
+                    cell.configure(image: imageName)
+                }
                 return cell
             }
-            return UICollectionViewCell()
+        case 4, 6, 7, 8, 9:
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MoneyTransferCvCell", for: indexPath) as? MoneyTransferCvCell {
+                if let imageName = viewModel.imageNameForSection(indexPath.section, at: indexPath.item) {
+                    cell.configure(image: imageName)
+                }
+                return cell
+            }
         case 2:
-            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "QrCvCell",for: indexPath) as? QrCvCell {
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "QrCvCell", for: indexPath) as? QrCvCell {
                 return cell
             }
-            return UICollectionViewCell()
         case 3:
-            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BlueTileCvCell",for: indexPath) as? BlueTileCvCell {
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BlueTileCvCell", for: indexPath) as? BlueTileCvCell {
                 return cell
             }
-            return UICollectionViewCell()
         default:
-            return UICollectionViewCell()
+            break
         }
-    }
-    
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 8
+        
+        return UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         if kind == UICollectionView.elementKindSectionHeader {
-            if [1, 4, 6, 7, 8, 9].contains(indexPath.section) {
-                guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderView", for: indexPath) as? HeaderView else {
-                    return UICollectionReusableView()
+            if let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderView", for: indexPath) as? HeaderView {
+                if let title = viewModel.titleForSection(indexPath.section) {
+                    headerView.configureTitle(title: title)
                 }
-                if indexPath.section < dataSourceTitle.count {
-                               header.configureTitle(title: dataSourceTitle[indexPath.section])
-                           }
-                           return header
+                return headerView
             }
         }
         return UICollectionReusableView()
     }
-    
 }
 
-extension NSDirectionalEdgeInsets {
-    static func set(top: CGFloat = 0, leading: CGFloat = .zero, bottom: CGFloat = .zero, trailing: CGFloat = .zero) ->  NSDirectionalEdgeInsets{
-        return NSDirectionalEdgeInsets(top: top, leading: leading, bottom: bottom, trailing: trailing)
-    }
-}

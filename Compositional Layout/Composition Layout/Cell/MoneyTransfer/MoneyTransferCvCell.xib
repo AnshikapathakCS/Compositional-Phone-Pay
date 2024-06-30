@@ -55,7 +55,7 @@
             </constraints>
             <size key="customSize" width="164" height="141"/>
             <connections>
-                <outlet property="iconIv" destination="Opo-P3-vl7" id="WjH-yV-InR"/>
+                <outlet property="iconIv" destination="Opo-P3-vl7" id="aMD-J1-xtu"/>
             </connections>
             <point key="canvasLocation" x="112.97709923664122" y="51.056338028169016"/>
         </collectionViewCell>
