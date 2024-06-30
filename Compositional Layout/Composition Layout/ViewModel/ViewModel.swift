@@ -23,9 +23,9 @@ class ViewModel: CollectionViewProtocol {
     
     let dataSource = ["HeaderImgTwo", "HeaderImgThree" , "HeaderImgSix", "HeaderImgOne", "HeaderImgFive", "HeaderImgFour"]
     
-    let dataSSourceTripImages = ["flyjet", "vistara", "trip", "yatra", "Esemytrip", "ixigo", "makemytrip","ixigo" ]
+    let dataSSourceTripImages = ["ixigo","ixigo","ixigo","ixigo","ixigo","ixigo","ixigo","ixigo"]
     
-    let rechargeArray = ["jio", "bsnl", "jio", "bsnl"]
+    let rechargeArray = ["jio", "jio", "jio", "jio"]
     
     var numberOfSections: Int {
         return 8
