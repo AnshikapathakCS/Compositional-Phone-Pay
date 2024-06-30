@@ -25,7 +25,6 @@ class ViewController: UIViewController {
         self.registerCell()
         self.registerHeaderAndFooter()
         self.setupCompositionLayout()
-        // Do any additional setup after loading the view.
     }
     
     func setConstraintForCollectionView() {
