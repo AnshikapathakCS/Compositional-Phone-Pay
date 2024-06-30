@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "PhonePay.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

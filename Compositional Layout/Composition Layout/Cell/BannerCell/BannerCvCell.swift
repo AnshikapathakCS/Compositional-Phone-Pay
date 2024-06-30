@@ -15,4 +15,7 @@ class BannerCvCell: UICollectionViewCell {
         // Initialization code
     }
 
+    func configureData(data: String){
+        parentView.image = UIImage(named: data)
+    }
 }

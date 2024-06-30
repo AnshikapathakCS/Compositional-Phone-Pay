@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderView" id="U6b-Vx-4bR" customClass="HeaderView" customModule="PhonePayCompositional" customModuleProvider="target">
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderView" id="U6b-Vx-4bR" customClass="HeaderView" customModule="Compositional_Layout" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="349" height="92"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
@@ -26,6 +25,9 @@
                 <constraint firstItem="qU2-fL-0Ys" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="16" id="9Zs-Tp-6Jv"/>
                 <constraint firstAttribute="bottom" secondItem="qU2-fL-0Ys" secondAttribute="bottom" constant="22" id="aCG-PL-gBI"/>
             </constraints>
+            <connections>
+                <outlet property="titleLabel" destination="qU2-fL-0Ys" id="Lmf-xm-qiB"/>
+            </connections>
             <point key="canvasLocation" x="142.74809160305344" y="35.211267605633807"/>
         </collectionReusableView>
     </objects>

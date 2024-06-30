@@ -18,6 +18,10 @@ class ViewController: UIViewController {
         return cv
     }()
     
+    let dataSourceTitle = ["Transfer Money", "Recharge and Paybills", "Sponsored Links", "Insurance", "Travel Bookings", "Switch"]
+    
+    let dataSource = ["HeaderImgTwo", "HeaderImgThree" , "HeaderImgSix", "HeaderImgOne", "HeaderImgFive", "HeaderImgFour"]
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(self.collectionView)
@@ -26,6 +30,7 @@ class ViewController: UIViewController {
         self.registerHeaderAndFooter()
         self.setupCompositionLayout()
     }
+
     
     func setConstraintForCollectionView() {
         NSLayoutConstraint.activate([
@@ -168,6 +173,8 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         switch indexPath.section {
         case 0,5:
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BannerCvCell",for: indexPath) as? BannerCvCell {
+                let imageName = dataSource[indexPath.item]
+                cell.configureData(data: imageName)
                 return cell
             }
             return UICollectionViewCell()
@@ -196,11 +203,15 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        if kind ==  UICollectionView.elementKindSectionHeader {
-            if indexPath.section == 1 || indexPath.section == 4 || indexPath.section == 6 || indexPath.section == 7 || indexPath.section == 8 || indexPath.section == 9{
-                if let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderView", for: indexPath) as? HeaderView {
-                    return header
+        if kind == UICollectionView.elementKindSectionHeader {
+            if [1, 4, 6, 7, 8, 9].contains(indexPath.section) {
+                guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderView", for: indexPath) as? HeaderView else {
+                    return UICollectionReusableView()
                 }
+                if indexPath.section < dataSourceTitle.count {
+                               header.configureTitle(title: dataSourceTitle[indexPath.section])
+                           }
+                           return header
             }
         }
         return UICollectionReusableView()
