@@ -4,13 +4,14 @@ This project demonstrates the usage of compositional layout in Swift for iOS dev
 
 git clone https://github.com/yourusername/compositional-layout-demo.git
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-![Simulator Screenshot - iPhone 15 Pro - 2024-06-30 at 20 50 23](https://github.com/AnshikapathakCS/Compositional-Phone-Pay/assets/105919568/a1c3f82d-3e50-40bc-a5d8-3c8f249ee353)
+This project![Simulator Screenshot - iPhone 15 Pro - 2024-06-30 at 21 54 37](https://github.com/AnshikapathakCS/Compositional-Phone-Pay/assets/105919568/5c631c94-75ff-48a0-892f-3114b54c4cd3)
 
 
+ is licensed under the MIT License - see the LICENSE file for details.
 
-![Simulator Screenshot - iPhone 15 Pro - 2024-06-30 at 19 36 38](https://github.com/AnshikapathakCS/Compositional-Phone-Pay/assets/105919568/eed432b9-d917-4fb8-8c34-b8c7bfbf8c39)
+
+ 
+![Simulator Screenshot - iPhone 15 Pro - 2024-06-30 at 21 54 48](https://github.com/AnshikapathakCS/Compositional-Phone-Pay/assets/105919568/5179295f-637e-4581-a358-c2b2e175dbe1)
 
 
 
