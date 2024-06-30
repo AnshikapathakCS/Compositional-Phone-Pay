@@ -11,5 +11,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ![Simulator Screenshot - iPhone 15 Pro - 2024-06-30 at 13 54 28](https://github.com/AnshikapathakCS/Compositional-Phone-Pay/assets/105919568/a97973a1-c28c-455e-84bb-fb815a25d0e3)
 ![Simulator Screenshot - iPhone 15 Pro - 2024-06-30 at 15 14 09](https://github.com/AnshikapathakCS/Compositional-Phone-Pay/assets/105919568/de50045e-f078-4a91-ab41-a6bdd445020e)
 
-https://github.com/AnshikapathakCS/Compositional-Phone-Pay/assets/105919568/6822e280-b799-4703-a0c3-b168721fa8e7
+
+https://github.com/AnshikapathakCS/Compositional-Phone-Pay/assets/105919568/4750db91-2712-456b-9dce-4919d75cdbcf
+
+
 
