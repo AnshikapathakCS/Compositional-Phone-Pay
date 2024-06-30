@@ -20,6 +20,8 @@
 		4C93F3952C31529800A3F0D2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93F3942C31529800A3F0D2 /* HeaderView.swift */; };
 		4C93F3972C31529E00A3F0D2 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C93F3962C31529E00A3F0D2 /* HeaderView.xib */; };
 		4C93F3992C3152A700A3F0D2 /* Hearder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93F3982C3152A700A3F0D2 /* Hearder.swift */; };
+		4C93F3A12C3157A300A3F0D2 /* BannerCvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C93F39F2C3157A300A3F0D2 /* BannerCvCell.swift */; };
+		4C93F3A22C3157A300A3F0D2 /* BannerCvCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C93F3A02C3157A300A3F0D2 /* BannerCvCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		4C93F3942C31529800A3F0D2 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = "../../../../../../Downloads/PhonePayCompositional 2/PhonePayCompositional/Compositional/HeaderAndFooter/HeaderView.swift"; sourceTree = "<group>"; };
 		4C93F3962C31529E00A3F0D2 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderView.xib; path = "../../../../../../Downloads/PhonePayCompositional 2/PhonePayCompositional/Compositional/HeaderAndFooter/HeaderView.xib"; sourceTree = "<group>"; };
 		4C93F3982C3152A700A3F0D2 /* Hearder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hearder.swift; path = "../../../../../../Downloads/PhonePayCompositional 2/PhonePayCompositional/Compositional/HeaderAndFooter/Hearder.swift"; sourceTree = "<group>"; };
+		4C93F39F2C3157A300A3F0D2 /* BannerCvCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCvCell.swift; sourceTree = "<group>"; };
+		4C93F3A02C3157A300A3F0D2 /* BannerCvCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerCvCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 		4C93F38E2C31515100A3F0D2 /* Composition Layout */ = {
 			isa = PBXGroup;
 			children = (
+				4C93F39A2C31550000A3F0D2 /* BannerCell */,
 				4C93F38F2C31516E00A3F0D2 /* HeaderAndFooter */,
 			);
 			path = "Composition Layout";
@@ -153,6 +158,15 @@
 				4C93F3982C3152A700A3F0D2 /* Hearder.swift */,
 			);
 			path = HeaderAndFooter;
+			sourceTree = "<group>";
+		};
+		4C93F39A2C31550000A3F0D2 /* BannerCell */ = {
+			isa = PBXGroup;
+			children = (
+				4C93F39F2C3157A300A3F0D2 /* BannerCvCell.swift */,
+				4C93F3A02C3157A300A3F0D2 /* BannerCvCell.xib */,
+			);
+			path = BannerCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +277,7 @@
 				4C93F3972C31529E00A3F0D2 /* HeaderView.xib in Resources */,
 				4C93F3492C314A8000A3F0D2 /* Base in Resources */,
 				4C93F3442C314A7F00A3F0D2 /* Base in Resources */,
+				4C93F3A22C3157A300A3F0D2 /* BannerCvCell.xib in Resources */,
 				4C93F3932C31528B00A3F0D2 /* Hearder.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +307,7 @@
 				4C93F3412C314A7F00A3F0D2 /* ViewController.swift in Sources */,
 				4C93F33D2C314A7F00A3F0D2 /* AppDelegate.swift in Sources */,
 				4C93F33F2C314A7F00A3F0D2 /* SceneDelegate.swift in Sources */,
+				4C93F3A12C3157A300A3F0D2 /* BannerCvCell.swift in Sources */,
 				4C93F3952C31529800A3F0D2 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
