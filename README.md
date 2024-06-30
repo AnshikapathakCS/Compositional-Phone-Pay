@@ -6,19 +6,11 @@ git clone https://github.com/yourusername/compositional-layout-demo.git
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-![Simulator Screenshot - iPhone 15 Pro - 2024-06-30 at 15 14 05](https://github.com/AnshikapathakCS/Compositional-Phone-Pay/assets/105919568/5dabe367-dd36-410d-9f85-23dda5c275ab)
 
 
-![Simulator Screenshot - iPhone 15 Pro - 2024-06-30 at 15 14 11](https://github.com/AnshikapathakCS/Compositional-Phone-Pay/assets/105919568/ecdf1df0-f9dd-4fbf-b4a9-84ee4132d7b5)
-
-
-![Simulator Screenshot - iPhone 15 Pro - 2024-06-30 at 13 54 28](https://github.com/AnshikapathakCS/Compositional-Phone-Pay/assets/105919568/a97973a1-c28c-455e-84bb-fb815a25d0e3)
-
-
-![Simulator Screenshot - iPhone 15 Pro - 2024-06-30 at 15 14 09](https://github.com/AnshikapathakCS/Compositional-Phone-Pay/assets/105919568/de50045e-f078-4a91-ab41-a6bdd445020e)
-
-
-https://github.com/AnshikapathakCS/Compositional-Phone-Pay/assets/105919568/4750db91-2712-456b-9dce-4919d75cdbcf
+![Simulator Screenshot - iPhone 15 Pro - 2024-06-30 at 19 36 38](https://github.com/AnshikapathakCS/Compositional-Phone-Pay/assets/105919568/9a290d2f-9d76-470a-80cb-0bd26cdd6854)
 
 
 
+
+![Simulator Screenshot - iPhone 15 Pro - 2024-06-30 at 19 36 29](https://github.com/AnshikapathakCS/Compositional-Phone-Pay/assets/105919568/cf18a82e-aae2-470b-a941-028bdffec3df)
