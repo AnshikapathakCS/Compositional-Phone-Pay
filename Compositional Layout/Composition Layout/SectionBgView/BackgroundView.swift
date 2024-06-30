@@ -23,7 +23,7 @@ class BackgroundView: UICollectionReusableView {
     
     var contentView: UIView = {
         let vw = UIView.init(frame: CGRect.zero)
-        vw.backgroundColor = UIColor.white
+        vw.backgroundColor =  UIColor(hex: "EEE7F3")
         vw.layer.cornerRadius = 12
        // vw.layer.borderColor = UIColor.black.cgColor
         //vw.layer.borderWidth = 1
@@ -33,5 +33,26 @@ class BackgroundView: UICollectionReusableView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+}
+
+extension UIColor {
+    convenience init(hex: String, alpha: CGFloat = 1.0) {
+        var hexString = hex.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+        if hexString.hasPrefix("#") {
+            hexString.remove(at: hexString.startIndex)
+        }
+        
+        // Convert hex string to integer
+        var rgbValue: UInt64 = 0
+        Scanner(string: hexString).scanHexInt64(&rgbValue)
+        
+        // Create UIColor from hexadecimal value
+        self.init(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: alpha
+        )
     }
 }
